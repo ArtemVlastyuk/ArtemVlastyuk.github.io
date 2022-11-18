@@ -4,7 +4,7 @@
 	border-radius: 20px;
     padding: 40px;
     
-    margin-top: 180px;
+    margin-top: 160px;
     
     z-index: 1;
    
@@ -15,16 +15,48 @@
 .login{
 	display: none;
 }
+@media (max-width: 701px){
+
+	
+	.login, .loginR{
+		margin-top: 130px;
+		
+	}
+	.img_logo{
+		transform: scale(0.7);
+
+	}
+
+}
+@media (max-width: 700px){
+	.img_logo{
+
+		transform: translateY(-17px);
+	}
+
+	.loginR{
+		margin-top: 110px;
+		padding: 35px;
+	}
+}
 .img_logo{
 	position: absolute;
 	left: calc(50% - 45px);
 	top: 30px;
 	height: 90px;
 	width: 90px;
+
 }
 form{
+	position: absolute;
+	top:0;
+
+	left: 0;
 	justify-content: center;
 	display: flex;
+	margin: 0px;
+	width: 100%;
+	
 
 }
 body{
@@ -33,25 +65,15 @@ body{
 	background-position: 33% 33%;
 	background-size: 130%;*/
 	
-}
-.loginR button{
-	margin-top: 20px;
-}
-.contener_login{
-
-	position: absolute;
-	top: 0;
-	left: 0;
 
 	width: 100%;
 	height: 100%;
 	background: #F1F1F1;
-/*	background:  #C0C0C0;*/
-
-	z-index: 66;
-	visibility: visible;
-	transition: 1s;
 }
+.loginR button{
+	margin-top: 20px;
+}
+
 /*.loginR{
 	display: none;
 }*/
