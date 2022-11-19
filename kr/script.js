@@ -47,6 +47,10 @@ document.querySelector(".loginR .email_reg").addEventListener("input", function 
     if (error_login!=null){
         error_login.remove();
     }
+    let error_password=document.querySelector(".error_password");
+    if (error_password!=null){
+        error_password.remove();
+    }
     error=false;
     let email=document.querySelector(".loginR .email_reg").value;
     let log=JSON.parse(localStorage.getItem("myKey"));
@@ -115,17 +119,15 @@ button_log.addEventListener("submit",function (event){
     }
     let error_password=document.querySelector(".error_password");
     if (error_password!=null){
+
         error_password.remove();
     }
-    setTimeout(1000);
-    //alert(email+" "+password);
+
     let log=JSON.parse(localStorage.getItem("myKey"));
     if(log==null){
         log=login;
     }
-    //alert(log);
-    //alert(email+" "+password);
-    //alert(log.length);
+
     let check=false;
     for (let i=0;i<log.length;i++){
         //alert(email+password);
@@ -151,6 +153,7 @@ button_log.addEventListener("submit",function (event){
                 newElement.querySelector("p").style.color="red";
                 //alert("Неверный пароль!");
                 event.preventDefault();
+                break;
             }
 
 
