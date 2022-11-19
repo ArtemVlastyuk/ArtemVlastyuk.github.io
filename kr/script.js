@@ -48,6 +48,9 @@ button.onclick=function (){
     console.log(password);
     alert(password);
     let log=JSON.parse(localStorage.getItem("myKey"));
+    if(log==null){
+        log=login;
+    }
     log.push((email+" "+password));
     localStorage.setItem("myKey",JSON.stringify(log));
     console.log(login);
@@ -60,6 +63,9 @@ button_log.onclick=function (){
     let password=document.querySelector(".login .password").value;
     //alert(email+" "+password);
     let log=JSON.parse(localStorage.getItem("myKey"));
+    if(log==null){
+        log=login;
+    }
     //alert(log);
     for (let i=0;i<log.length;i++){
         //alert(email+password);
@@ -70,5 +76,8 @@ button_log.onclick=function (){
     }
 }
 let log=JSON.parse(localStorage.getItem("myKey"));
+if(log==null){
+    log=login;
+}
 alert(log);
 
