@@ -44,7 +44,7 @@
 	width: 90px;
 
 }
-form{
+.form{
 	position: absolute;
 	top:0;
 
@@ -87,6 +87,7 @@ body{
 	color: black;
 	text-decoration: underline;
 	text-align: center;
+
 	text-decoration-color: white;
 	font-family: Georgia;
 	font-size: 24px;
