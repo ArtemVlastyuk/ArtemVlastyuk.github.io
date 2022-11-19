@@ -29,7 +29,8 @@
 	
 	
 				<img src="logo1.png" class="img_logo">
-				<form action="#"  method="post" enctype="multipart/form-data">
+				
+				<form action=""  method="post">
 				<div class="login">
 					<div class="login_h">
 						<h1>Вход</h1>
@@ -39,10 +40,10 @@
 
 					<div class="form_login">
 						Электронная почта
-						<input required placeholder="Логин" type="email">
+						<input class="login_input" required placeholder="Логин" type="text">
 						<br>
 						Пароль
-						<input required placeholder="Пароль" type="password">
+						<input required class="password" placeholder="Пароль" type="password">
 						
 						<p>Забыли пароль?</p>
 
@@ -68,20 +69,21 @@
 
 					<div class="form_login">
 						Имя
-						<input required placeholder="Имя" type="text">
+						<input class="name" placeholder="Имя" type="text">
 						<br>
 						Фамилия
-						<input required placeholder="Фамилия" type="text">
+						<input class="lastname" placeholder="Фамилия" type="text">
 						<br>
 						Электронная почта
-						<input required placeholder="Электронная почта" type="email">
+						<input class="email_reg" placeholder="Электронная почта" type="text">
 						<br>
 						Пароль
-						<input required placeholder="Пароль" type="password">
+						<input class="password_reg" placeholder="Пароль" type="password">
 						
 					
 
-						<button class="login_button" type="submit">Зарегестрироваться</button>
+						<button name="submit" class="reg_button" type="submit">Зарегестрироваться</button>
+						
 
 					</div>
 					<div class="login_text">
@@ -98,4 +100,5 @@
 			<script src="script.js"></script>
 </body>
 </html>
+
 				
