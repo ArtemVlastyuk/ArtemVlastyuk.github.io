@@ -86,12 +86,10 @@ button.addEventListener("submit",function (event){
     let name=document.querySelector(".loginR .name").value;
     let lastname=document.querySelector(".lastname").value;
     let email=document.querySelector(".email_reg").value;
-    console.log(email);
-    alert(email);
+
     if (!error) {
         let password = document.querySelector(".password_reg").value;
-        console.log(password);
-        alert(password);
+
         if (log == null) {
             log = login;
         }
@@ -104,7 +102,7 @@ button.addEventListener("submit",function (event){
         log.push(s);
         //log.push(email+" "+password);
         localStorage.setItem("myKey", JSON.stringify(log));
-        alert(log);
+
     }
 });
 
