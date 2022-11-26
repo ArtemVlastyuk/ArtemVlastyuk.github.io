@@ -1,8 +1,8 @@
 let authorization=JSON.parse(localStorage.getItem("autorization"));
 //localStorage.setItem("authorization", JSON.stringify(log));
 if (authorization!=null && authorization!=false){
-    //document.querySelector(".vhod").href="profil.html";
-    document.querySelector(".vhod").href="profil.html";
+
+    document.querySelector(".vhod").href="#";
 }
 let check=0;
 document.querySelector('.side-menu').addEventListener("click",

@@ -126,6 +126,10 @@ body{
 	margin-bottom: 20px;
 	transition: 0.3s;	
 }
+.inputs{
+	display: flex;
+	flex-wrap: wrap;
+}
 .form_login button:hover{
 	opacity: 1;
 }

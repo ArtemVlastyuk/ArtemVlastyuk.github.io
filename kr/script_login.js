@@ -192,17 +192,7 @@ if(log==null || log.length==0){
 }
 
 let check=0;
-document.querySelector('.side-menu').addEventListener("click",
-    function (event){
-        if(check==0){
-            document.body.style.overflow="hidden";
-            check=1;
-        }
-        else{
-            document.body.style.overflow="visible";
-            check=0;
-        }
-    });
+
 // localStorage.setItem("autorization",JSON.stringify(false));
 // alert(JSON.parse(localStorage.getItem("autorization")));
 //alert(log);

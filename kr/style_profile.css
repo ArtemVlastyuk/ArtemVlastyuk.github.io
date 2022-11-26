@@ -51,8 +51,10 @@ label{
     margin-bottom: 20px;
 }
 .change input{
+
     width: 180px;
 }
+
 .back{
     cursor: pointer;
     content: " ";
@@ -135,7 +137,9 @@ label{
     width: 1.5px;
     background-color: gainsboro;
 }
-
+.exit{
+    cursor: pointer;
+}
 .personal-info
 ,.submitted-form{
     display: flex;
@@ -233,11 +237,13 @@ label{
 }
 
 
-.contact div,
-.change div{
+.contact > div
+{
     margin-left: 30px;
 }
-
+.change > div{
+    margin-left: 10%;
+}
 
 .sidebar-profile li{
     margin-top: 3px;

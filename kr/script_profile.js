@@ -65,4 +65,36 @@ document.querySelector('.side-menu').addEventListener("click",
             document.body.style.overflow="visible";
             check=0;
         }
-    });
+});
+document.querySelector("form").addEventListener("submit",function (event){
+
+    let email=document.querySelector(".email").value
+
+    let tel=document.querySelector(".tel").value
+
+    let name=document.querySelector(".name").value
+
+    let lastname=document.querySelector(".lastname").value
+
+    let patronymic=document.querySelector(".patronymic").value
+
+    let log=JSON.parse(localStorage.getItem("info"));
+    let emailOld=log.email;
+    log.tel=tel;
+    log.name=name;
+    log.email=email;
+    log.lastname=lastname;
+    log.patronymic=patronymic;
+    localStorage.setItem("info",JSON.stringify(log));
+    let bd=JSON.parse(localStorage.getItem("myKey"));
+
+    for(let i=0;i<bd.length;i++){
+        if (bd[i].email == emailOld) {
+            bd[i]=log;
+        }
+    }
+    localStorage.setItem("myKey",JSON.stringify(bd));
+
+
+
+})
