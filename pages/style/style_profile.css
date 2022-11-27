@@ -34,9 +34,25 @@
 }
 label{
     color:#748ca3;
-    padding-left: 5px;
-}
 
+}
+.submitted-form ul{
+    padding-left: 0;
+    padding-top: 0;
+
+}
+.add-li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.add-li a{
+    padding-top: 10px;
+    width: 40px;
+}
 .info input,
 .contact input,
 .change input{
@@ -140,8 +156,7 @@ label{
 .exit{
     cursor: pointer;
 }
-.personal-info
-,.submitted-form{
+.personal-info {
     display: flex;
     width: 90%;
     height: 45%;
@@ -149,6 +164,14 @@ label{
     border-radius: 20px;
     /*margin-top: 4%;*/
     /*margin-left: 5%;*/
+}
+.submitted-form{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+
+
 }
 .profile-form{
     display: inline-block;
@@ -167,6 +190,7 @@ label{
 }
 
 .submitted-form{
+
     margin-top: 0%;
     width: 90%;
     height: 75%;
@@ -275,6 +299,7 @@ label{
 
 
 .sidebar-profile ul{
+    width: 100%;
     margin-top: 20px;
     margin-left: 35px;
     padding-left: 0px;

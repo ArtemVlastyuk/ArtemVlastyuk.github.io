@@ -53,3 +53,8 @@ document.querySelector('.gosling').addEventListener('mouseover', function (event
 document.querySelector('.gosling').addEventListener('mouseout', function (event){
     document.querySelector('.gosling').src='pages/img/gosling2.jpeg'
 });
+document.querySelector('.cont').onclick=function (){
+    document.body.style.overflow="visible";
+    document.querySelector('.ul_header').style.top='-200%'
+    document.querySelector('.side-menu').checked=false;
+}

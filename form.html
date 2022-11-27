@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Актеры театра и кино</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <link rel="stylesheet" href="pages/style/style.css">
+
+</head>
+<body>
+<header id="head">
+  <nav>
+
+    <a href="#"><img class="logo_header" src="pages/img/logo1.png" height="60" width="60"></a>
+
+
+    <ul class="ul_header">
+
+      <li><a href="PR1.html">Актеры кино</a></li>
+      <li><a href="theatre.html">Актеры театра</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="form.html">Формы</a></li>
+      <li><a class="cont" href="#cont_info">Контакты</a></li>
+
+    </ul>
+    <a class="vhod" href="pages/login.html">
+      <img src="pages/img/profil.png"
+           height="60" width="60">
+    </a>
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <div class="header_burger"><span ></span></div>
+
+  </nav>
+
+
+</header>
+
+<div class="forms">
+  <h2>Создайте заявку на добавление актера</h2>
+  <form action="#" class="form1" method="get" enctype="multipart/form-data" id="form">
+
+    <fieldset class="block1">
+
+      <legend>Личная информация</legend>
+      <div>
+        <label for="fio">Имя актера:</label>
+        <br>
+        <input autocomplete="off" required type="text" name="fio" placeholder=""
+               pattern="^[А-Яа-яЁё\s]+$">
+      </div>
+      <div>
+        <label for="fio">Фамилия актера:</label>
+        <br>
+        <input autocomplete="off"  required type="text" name="fio" placeholder=""
+               pattern="^[А-Яа-яЁё\s]+$">
+      </div>
+
+
+      <div>
+        <label autocomplete="off"  for="email">Почта:</label>
+        <br>
+        <input autocomplete="off"  required type="email" name="email" >
+      </div>
+
+      <div>Пол:<br>
+        <input required type="radio" id="cb1" name="gender">
+        <label for="cb1">м</label>
+        <br>
+        <input required type="radio" id="cb1" name="gender">
+        <label for="cb2">ж</label>
+      </div>
+      <p>Об актере:<p>
+      <textarea name="text_about_actor" cols="30" rows="10" maxlength="1000" minlength="50" required ></textarea>
+
+    </fieldset>
+    <fieldset class="block2">
+      <legend>Информация об актерской карьере</legend>
+      <p>Актер:</p>
+      <p><input  type="checkbox" name="type_actor">Театра</p>
+      <p><input  type="checkbox" name="type_actor2">Кино</p>
+      <p>Фото актера:<p>
+      <input type="file" name="photo">
+
+
+
+      <p>Место работы:<p>
+      <select multiple required size="8" name="counry">
+        <option  value="russia">Россия</option>
+        <option value="USA">США</option>
+        <option value="Spain">Испания</option>
+        <option value="china">Китай</option>
+        <option value="india">Индия</option>
+        <option value="UK">Великобритания</option>
+        <option value="France">Франция</option>
+      </select>
+    </fieldset>
+    <div class="block3">
+      <p>Номер телефона для связи:</p>
+      <input autocomplete="off" required type="tel" name="tel"
+             pattern="[/+]*[0-9]+">
+      <p>Введите пароль для последующего редактирования анкеты:</p>
+      <input   type="password" name="rassword"  minlength="8" maxlength="16">
+      <br>
+      <button  type="submit">Отправить</button>
+    </div>
+  </form >
+</div>
+
+
+
+<footer >
+  <address>
+    <!-- <h2 id="cont_info"><a href="#head">В начало</a></h2> -->
+    <div class="footer_aboutUs">
+      <h2>О нас</h2>
+      <div class="line"></div>
+      <p>Это сайт на котором можно узнать информацию об актерах театра и кино. Также вы можете добавить своего актера</p>
+      <div class="footer_logo">
+        <div><a href="https://vk.com/artemvlastyuk"><img src="pages/img/vk.png" height="20" width="20"></a>
+        </div>
+        <div><a href="https://instagram.com/artemvlastyuk"><img src="pages/img/inst.png" height="20" width="20"></a></div>
+        <div><a href="#"><img src="pages/img/fb.png" height="20" width="20"></a>
+        </div>
+        <div><a href="#"><img  class="yt" src="pages/img/yt.png" height="20" width="25"></a>
+        </div>
+        <div><a href="#"><img   src="pages/img/tg1.png" height="20" width="20"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <h2>Навигация</h2>
+      <div class="line"></div>
+      <div><a href="#">Вход</a></div>
+      <div><a href="#Topic1">Актеры Кино</a></div>
+      <div><a href="#Topic2">Актеры Театра</a></div>
+      <div><a href="#form">Добавить актера</a></div>
+      <div><a href="#gallery">Галерея</a></div>
+    </div>
+    <div class="Contacts" id="cont_info">
+      <h2>Контакты</h2>
+      <div class="line"></div>
+      <div>
+
+        <a href="mailto:cvlastyul@mail.ru">
+          <img src="pages/img/mail.jpeg" height="12"> cvlastyuk@mail.ru</a></div>
+      <div><a href="tel: +79299287868"> <img src="pages/img/tel.png" height="12">+7(929)-928-78-68</a></div>
+      <div><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_baryshikha_12/Z04YdQFgSkQEQFtvfXR1cXxrZw==/?ll=37.360313%2C55.840083&z=15" >
+        <img src="pages/img/geo.png" height="12"> Россия г. Москва улица Барышиха д12</a></div>
+    </div>
+  </address>
+</footer>
+
+
+
+<script src="pages/script/script-menu.js"></script>
+</body>
+
+</html>

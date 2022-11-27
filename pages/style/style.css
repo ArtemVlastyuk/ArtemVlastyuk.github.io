@@ -208,7 +208,7 @@ aside h2{
 .form1 select{
 	background-color: rgb(44, 48, 59);
 	color: white;
-	border-color: aquamarine;
+	border-color: bisque;
 	border-radius: 0;
 	border-width: 2px;
 
@@ -236,7 +236,7 @@ aside h2{
 	margin-bottom: 30px;
 	height: 30px;
 	width: 100px;
-	background-color: aquamarine;
+	background-color: bisque;
 	border-style: none;
 	border-radius: 3px;
 }
@@ -249,14 +249,14 @@ aside h2{
 .form1 .block2{
 	margin-right: 2%;
 	
-	border-color: aquamarine;
+	border-color: bisque;
 }
 .forms h2{
 	text-align: center;
 }
 .form1 .block1{
 	grid-area: block1;
-	border-color: aquamarine;
+	border-color: bisque;
 	
 	
 }
@@ -275,7 +275,7 @@ aside h2{
 .form1 input[type="password"]
 {
 	border: none;
-	border-bottom: 2px solid aquamarine;
+	border-bottom: 2px solid bisque;
 	background-color:rgb(44, 48, 59);
 	color: white;
 	transition: 0.5s;
@@ -287,7 +287,7 @@ aside h2{
 .form1 input[type="email"]
 {
 	border: none;
-	border-bottom: 2px solid aquamarine;
+	border-bottom: 2px solid bisque;
 	background-color:rgb(44, 48, 59);
 	color: white;
 	transition: 0.7s;
@@ -310,7 +310,7 @@ form address{
 	width: 90%;
 	height: 100px;
 	background-color:rgb(44, 48, 59);
-	border-color: aquamarine;
+	border-color: bisque;
 	border-width: 2px;
 	color: white;
 	transition: 0.7s;
@@ -318,7 +318,7 @@ form address{
 }
 .form1 textarea:focus{
 	
-	background-color: aquamarine;
+	background-color: bisque;
 	border-width: 2px;
 	color: black;
 
@@ -330,8 +330,8 @@ form address{
 .form1 input[type="email"]:focus
 {
 	border: none;
-	border-bottom: 2px solid aquamarine;
-	background-color:aquamarine;
+	border-bottom: 2px solid bisque;
+	background-color:bisque;
 	color: black;
 }
 @media (max-width: 1001px) and (min-width: 770px){
@@ -1469,142 +1469,11 @@ header nav input{
 	width: 100%;
 	margin-top: 30px;
 	padding-top: 3px;
-	background: rgb(44, 48, 59);
+
 	
 
 }
-.gallery .gallery1 {
-	width: 95%;
-	height: 70%;
-	margin-left: .75%;
-	margin-top: 3.375%;
-	display: grid;
-	grid-template-columns: repeat(5, 19%);
-	grid-template-rows: repeat(4, 20%);
-	grid-column-gap: .75%;
-	grid-row-gap: .75%;
-	grid-template-areas: "img1 img2 img3 img4 img5"
-						"img6 img7 img8 img9 img10" 
-						"img11 img12 img13 img14 img15"
-						"img16 img17 img18 img19 img20";
-}
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7,
-.img8,
-.img9,
-.img10,
-.img11,
-.img12,
-.img13
-{
-	
-	position: relative;
-	
-}
-.img1{
 
-	grid-area: img1;
-}
-.img20{
-
-	grid-area: img20;
-}
-.img1::before,
-.img2::before,
-.img3::before,
-.img4::before,
-.img5::before,
-.img6::before,
-.img7::before,
-.img8::before,
-.img9::before,
-.img10::before,
-.img11::before,
-.img12::before,
-.img13::before
-{
-	width: 100%;
-	height: 20%;
-	position: absolute;
-	top: 90%;
-	text-align: center;
-	
-
-	
-	
-	font-size: calc(12px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
-	color: white;
-	transform: scale3d(.0, .0, .0);
-	transition-duration: 0.7s;
-}
-.img1::before,
-.img8::before,
-.img11::before,
-.img13::before
-{
-	
-	content: 'Аль Пачино';
-}
-.img8::before,
-.img11::before,
-.img13::before,
-.img12::before{
-	top: 85%;
-}
-.img9::before{
-	content: "Чарли Ханнем";
-
-}
-.img2::before{
-	top: 85%;
-	content: 'Килиан Мерфи';
-}
-.img3::before{
-	top: 85%;
-	content: 'Джонни Депп';
-}
-.img4::before,
-.img7::before
-{
-	top: 85%;
-	content: 'Бред Питт';
-}
-.img5::before,
-.img12::before
-{
-	content: 'Ди Каприо';
-}
-.img6::before,
-.img10::before{
-	top: 80%;
-	content: "Хит Леджер";
-}
-
-.img1:hover::before,
-.img2:hover::before,
-.img3:hover::before,
-.img4:hover::before,
-.img5:hover::before,
-.img6:hover::before,
-.img7:hover::before,
-.img8:hover::before,
-.img9:hover::before,
-.img10:hover::before,
-.img11:hover::before,
-.img12:hover::before,
-.img13:hover::before{
-	transform: scale3d(1.0, 1.0, 1.0);
-}
-
-@media (max-width: 767px){
- .img1::before{
- font-size: calc(12px + 16 * (100vw / 1280));
- }
  
 }
 
@@ -1943,7 +1812,7 @@ header nav input{
 	}
 
 }
-@media (max-width: 500px){
+@media (max-width: 570px){
 	.text p{
 		color: white;
 		font-size: 12px;
@@ -1952,4 +1821,107 @@ header nav input{
 	}
 
 }
+@media (max-width: 330px){
+	.text p{
+		color: white;
+		font-size: 10px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+}
+.gallery{
+	margin-top: 80px;
+}
+.forms{
+	margin-top: 90px;
+}
+.gallery .gallery1 {
+	width: 95%;
+	height: 90%;
+	margin-left: .75%;
+	margin-top: 3.375%;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(5, 19%);
+	grid-column-gap: .75%;
+	grid-row-gap: .75%;
+	grid-template-areas: "img1 img2 img3 img3"
+	 										"img1 img4 img5 img6"
+	 										"img7 img7 img5 img8"
+	 										"img9 img9 img10 img11"
+	 										"img9 img9 img12 img13";
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10,
+.img11,
+.img12,
+.img13
+{
+	position: relative;
+
+}
+.img1{
+	grid-area: img1;
+}
+.img2{
+	grid-area: img2;
+}
+.img3{
+	grid-area: img3;
+}
+.img4{
+	grid-area: img4;
+}
+.img5{
+	grid-area: img5;
+}
+.img6{
+	grid-area: img6;
+}
+.img7{
+	grid-area: img7;
+}
+.img8{
+	grid-area: img8;
+}
+.img9{
+	grid-area: img9;
+}
+.img10{
+	grid-area: img10;
+}
+.img11{
+	grid-area: img11;
+}
+.img12{
+	grid-area: img12;
+}
+.img13{
+	grid-area: img13;
+}
+.gallery ul > li{
+
+	list-style: none;
+
+
+}
+.gallery img {
+
+
+	width: 100%;
+	height: 100%;
+
+
+	border-radius: 5px;
+}
+
 

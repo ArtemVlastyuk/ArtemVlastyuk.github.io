@@ -14,12 +14,12 @@ document.querySelector(".exit").onclick=function (){
         document.querySelector(".back").style.display="none";
         document.body.style.overflow = 'auto';
     }
-    document.querySelector(".back").addEventListener('click', e => { // при клике в любом месте окна браузера
-        const modal = e.target // находим элемент, на котором был клик
-        if (!modal.closest('.modal-div')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+    document.querySelector(".back").addEventListener('click', e => {
+        const modal = e.target
+        if (!modal.closest('.modal-div')) {
             document.querySelector(".back").style.display="none";
             document.body.style.overflow = 'auto';
-// то закрываем окно навигации, удаляя активный класс
+
         }
     })
 
