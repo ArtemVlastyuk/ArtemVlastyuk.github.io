@@ -1,22 +1,6 @@
-let authorization=JSON.parse(localStorage.getItem("autorization"));
-//localStorage.setItem("authorization", JSON.stringify(log));
-if (authorization!=null && authorization!=false){
-    //document.querySelector(".vhod").href="profil.html";
-    document.querySelector(".vhod").href="pages/profil.html";
-}
 
-document.querySelector('.side-menu').addEventListener("click",
-    function (event){
-        if (document.querySelector('.side-menu').checked){
-            document.body.style.overflow="hidden";
-            document.querySelector('.ul_header').style.top='60px';
-        }
-        else{
-            document.body.style.overflow="visible";
-            document.querySelector('.ul_header').style.top='-200%';
-        }
 
-    });
+
 
 document.querySelector('.kozl').addEventListener('mouseover', function (event){
     document.querySelector('.kozl').src='pages/img/kozl2.jpeg'
@@ -62,8 +46,4 @@ document.querySelector('.ot').addEventListener('mouseover', function (event){
 document.querySelector('.ot').addEventListener('mouseout', function (event){
     document.querySelector('.ot').src='pages/img/ot.jpeg'
 });
-document.querySelector('.cont').onclick=function (){
-    document.body.style.overflow="visible";
-    document.querySelector('.ul_header').style.top='-200%'
-    document.querySelector('.side-menu').checked=false;
-}
+

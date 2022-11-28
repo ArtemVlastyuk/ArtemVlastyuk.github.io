@@ -54,18 +54,7 @@ document.querySelector(".exit").onclick=function (){
 
 }
 
-let check=0;
-document.querySelector('.side-menu').addEventListener("click",
-    function (event){
-        if(check==0){
-            document.body.style.overflow="hidden";
-            check=1;
-        }
-        else{
-            document.body.style.overflow="visible";
-            check=0;
-        }
-});
+
 document.querySelector("form").addEventListener("submit",function (event){
 
     let email=document.querySelector(".email").value
