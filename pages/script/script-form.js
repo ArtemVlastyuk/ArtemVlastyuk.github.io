@@ -6,7 +6,7 @@ document.querySelector(".exit").onclick=function (){
         document.querySelector(".back").style.display="none";
         localStorage.setItem("autorization",JSON.stringify(false));
         localStorage.setItem("info",JSON.stringify(''))
-        window.location.href = "../PR1.html";
+        window.location.href = "../kino.html";
         document.body.style.overflow = 'auto';
     }
 

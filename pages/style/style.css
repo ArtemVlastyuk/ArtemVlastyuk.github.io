@@ -1469,14 +1469,7 @@ header nav input{
 	width: 100%;
 	margin-top: 30px;
 	padding-top: 3px;
-
-	
-
 }
-
- 
-}
-
 .img2{
 	grid-area: img2;
 }
@@ -1532,18 +1525,11 @@ header nav input{
 	grid-area: img19;
 }
 .gallery ul > li{
-	
 	list-style: none;
-	
-  
 }
 .gallery img {
-
-  
   width: 100%;
   height: 100%;
-
- 
   border-radius: 5px;
 }
 
@@ -1830,12 +1816,18 @@ header nav input{
 	}
 
 }
-.gallery{
-	margin-top: 80px;
+@media (max-width: 350px){
+	.div-li p{
+		font-size: 10px;
+	}
 }
 .forms{
 	margin-top: 90px;
 }
+.gallery{
+	margin-top: 80px;
+}
+
 .gallery .gallery1 {
 	width: 95%;
 	height: 90%;

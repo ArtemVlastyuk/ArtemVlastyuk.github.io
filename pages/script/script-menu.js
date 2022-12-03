@@ -14,5 +14,4 @@ document.querySelector('.side-menu').addEventListener("click",
             document.body.style.overflow="visible";
             document.querySelector('.ul_header').style.top='-200%';
         }
-
-    });
+});
