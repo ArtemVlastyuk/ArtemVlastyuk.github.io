@@ -21,7 +21,6 @@ reg.onclick=function () {
     for (var i=0;i<inputs_reg.length;i++){
         inputs_reg[i].required=true;
     }
-
     let form_reg=document.querySelector(".loginR");
     form_reg.style.display="block";
 }
@@ -82,7 +81,7 @@ document.querySelector(".loginR .email_reg").addEventListener("input", function 
 });
 function pos(event) {
     event.preventDefault();
-};
+}
 
 button.addEventListener("submit",function (event){
     let name=document.querySelector(".loginR .name").value;
